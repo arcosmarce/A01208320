@@ -12,13 +12,11 @@
 	<title>Lab 1</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<style>
-			.nav-tabs {border-bottom: 1px solid #fc0303;}
-						ul.nav > li > a:hover {color: #ffffff;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;background-color: #495057}
-						.nav-tabs > li > a {color: #919191;}
-						a.active.nav-link{color:#ffffff!important;background-color: #868e96!important;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;border-bottom-style:none;}
-	body {
-	margin-bottom: 55px;
-	}
+									.nav-tabs {border-bottom: 1px solid #fc0303;}
+										ul.nav > li > a:hover {color: #ffffff;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;background-color: #495057}
+										.nav-tabs > li > a {color: #919191;}
+										a.active.nav-link{color:#ffffff!important;background-color: #868e96!important;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;border-bottom-style:none;}
+										body {margin-bottom: 30px;}
 	</style>
 </head>
 
@@ -26,24 +24,24 @@
 	<header>
 		<nav class="navbar navbar-light bg-dark">
 			<a class="navbar-brand text-danger" href="#"><img src="favicon.png" width="30" height="30" class=
-			"d-inline-block align-top spinner-grow" alt="">Saul Axel Palacios Acosta</a>
+			"d-inline-block align-top spinner-grow" alt="">Saúl Axel Palacios Acosta</a>
 		</nav>
 	</header>
 
 	<nav>
 		<ul class="nav nav-tabs bg-dark" id="myTab" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="perfil"
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#perf" role="tab" aria-controls="perfil"
 				aria-selected="true">Perfil</a>
 			</li>
 
 			<li class="nav-item">
-				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="descripcion"
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#des" role="tab" aria-controls="descripcion"
 				aria-selected="false">Descripción</a>
 			</li>
 
 			<li class="nav-item">
-				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="preguntas"
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#preg" role="tab" aria-controls="preguntas"
 				aria-selected="false">Preguntas</a>
 			</li>
 		</ul>
@@ -51,95 +49,507 @@
 
 	<section>
 		<div class="tab-content" id="myTabContent">
-			<article class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				...
+			<article class="tab-pane fade show active" id="perf" role="tabpanel" aria-labelledby="home-tab">
+				<p>Mis intereses son jugar a videojuegos y programar. Solo cuento con la experiencia aprendida en la clase de FDI. Para el equipo mis compromisos son trabajar de forma constante en el proyecto y tener una buena actitud. Del curso espero aprender lo necesario para poder llevar de manera correcta y eficiente un proyecto.</p>
+<div class="embed-responsive embed-responsive-16by9">
+   <video autoplay loop id="bgvid" muted>
+        <source id="webm" src="https://n9e5v4d8.ssl.hwcdn.net/images/prime-access/primeaccessivara/bg.webm" type="video/webm" >
+    </video>
+</div>
 			</article>
 
-			<article class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-				<div class="accordion" id="accordionExample">
-					<div class="card">
-						<div class="card-header" id="headingOne">
-							<h2 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target=
-							"#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button></h2>
-						</div>
-
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<div class="card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-								wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-								eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-								assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-								nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-								farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-								labore sustainable VHS.
-							</div>
-						</div>
+			<article class="tab-pane fade" id="des" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>URL</h6>
 					</div>
 
-					<div class="card">
-						<div class="card-header" id="headingTwo">
-							<h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-							data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item
-							#2</button></h2>
-						</div>
-
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-							<div class="card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-								wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-								eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-								assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-								nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-								farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-								labore sustainable VHS.
-							</div>
-						</div>
+					<div class="card-body">
+						<p>Localizador Uniforme de Recursos (Uniform Resource Locator), es una dirección única utilizado para
+						ubicar algún recurso dentro de la web.</p>
 					</div>
 
-					<div class="card">
-						<div class="card-header" id="headingThree">
-							<h2 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-							data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item
-							#3</button></h2>
-						</div>
+					<div class="card-footer text-muted">
+						<a href="https://www.comunicatefacil.com/diferencias-world-wide-web-internet/" class=
+						"card-link">https://www.comunicatefacil.com/diferencias-world-wide-web-internet/</a>
+					</div>
+				</div>
 
-						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-							<div class="card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-								wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-								eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-								assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-								nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-								farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-								labore sustainable VHS.
-							</div>
-						</div>
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>MIME</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Extensiones multipropósito de correo de internet (Multipurpose Internet Mail Extensions), es un
+						estandar para mandar contenido.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.viainternet.com.mx/clientes/index.php/knowledgebase/21/iQue-es-MIME-Types.html" class=
+						"card-link">https://www.viainternet.com.mx/clientes/index.php/knowledgebase/21/iQue-es-MIME-Types.html</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>Métodos y códigos de errores HTTP</h6>Metodos:
+
+						<ul style="list-style-type:circle;">
+							<li>GET</li>
+
+							<li>HEAD</li>
+
+							<li>POST</li>
+
+							<li>PUT</li>
+
+							<li>DELETE</li>
+
+							<li>CONNECT</li>
+
+							<li>OPTIONS</li>
+
+							<li>TRACE</li>
+
+							<li>PATCH</li>
+						</ul><br>
+						Codigos de errores:
+
+						<ul style="list-style-type:circle;">
+							<li>400 Bad Request</li>
+
+							<li>401 Unauthorized</li>
+
+							<li>402 Payment Required</li>
+
+							<li>403 Forbidden</li>
+
+							<li>404 Not Found</li>
+
+							<li>405 Method Not Allowed</li>
+
+							<li>406 Not Acceptable</li>
+
+							<li>407 Proxy Authentication Required</li>
+
+							<li>408 Request Timeout</li>
+
+							<li>409 Conflict</li>
+
+							<li>410 Gone</li>
+
+							<li>411 Length Required</li>
+
+							<li>412 Precondition Failed</li>
+
+							<li>413 Payload Too Large</li>
+
+							<li>414 URI Too Long</li>
+
+							<li>415 Unsupported Media Type</li>
+
+							<li>416 Requested Range Not Satisfiable</li>
+
+							<li>417 Expectation Failed</li>
+
+							<li>418 I'm a teapot</li>
+
+							<li>421 Misdirected Request</li>
+
+							<li>422 Unprocessable Entity</li>
+
+							<li>423 Locked</li>
+
+							<li>424 Failed Dependency</li>
+
+							<li>426 Upgrade Required</li>
+
+							<li>428 Precondition Required</li>
+
+							<li>429 Too Many Requests</li>
+
+							<li>431 Request Header Fields Too Large</li>
+
+							<li>451 Unavailable For Legal Reasons</li>
+						</ul>
+					</div>
+
+					<div class="card-body">
+						<a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods" class=
+						"card-link">https://developer.mozilla.org/es/docs/Web/HTTP/Methods</a><br>
+						<a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status" class=
+						"card-link">https://developer.mozilla.org/es/docs/Web/HTTP/Status</a>
+					</div>
+
+					<div class="card-footer text-muted"></div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>HTML5</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Lenguaje de Marcas de Hipertexto (HyperText Markup Language), el lenguaje utilizado para la web.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.comunicatefacil.com/diferencias-world-wide-web-internet/" class=
+						"card-link">https://www.comunicatefacil.com/diferencias-world-wide-web-internet/</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>JS</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Javascript es un lenguaje que permite realizar acciones complejas en una pagina web, sobre todo para
+						animaciones, actualizaciones de contenido, mapas, entre otros.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Qu%C3%83%C2%A9_es_JavaScript"
+						class="card-link">https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Qué_es_JavaScript</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>php</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Es un acrónimo recursivo de PHP: Hypertext Preprocessor. Lenguaje de código abierto para desarrollo
+						web.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.php.net/manual/es/intro-whatis.php" class=
+						"card-link">https://www.php.net/manual/es/intro-whatis.php</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>jsp</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Páginas de Servidor Java (Java Server Pages), crear paginas web utilizando Java.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://desarrolloweb.com/articulos/831.php" class=
+						"card-link">https://desarrolloweb.com/articulos/831.php</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>Ajax</h6>
+					</div>
+
+					<div class="card-body">
+						<p>JavaScript asíncrono y XML (Asynchronous JavaScript and XML), permite que una pagina web funcione de
+						forma asíncrona.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.hostinger.mx/tutoriales/que-es-ajax/" class=
+						"card-link">https://www.hostinger.mx/tutoriales/que-es-ajax/</a>
 					</div>
 				</div>
 			</article>
 
-			<article class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+			<article class="tab-pane fade" id="preg" role="tabpanel" aria-labelledby="contact-tab">
 				<div class="card text-white bg-dark mb-3">
 					<div class="card-header">
 						<h6>¿Cuál es la diferencia entre Internet y la World Wide Web?</h6>
 					</div>
 
 					<div class="card-body">
-						<p class="card-text"></p>
+						<p>Aunque relacionados, no son lo mismo, el internet es la infraestructura que le da soporte al world wide
+						web, que ofrece el servicio de información a la que se puede acceder.</p>
 					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.comunicatefacil.com/diferencias-world-wide-web-internet/" class=
+						"card-link">https://www.comunicatefacil.com/diferencias-world-wide-web-internet/</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>GET: Se pide la recuperación de un recurso.<br>
+						HEAD: Es similar a GET, pero sin el cuerpo de la respuesta.<br>
+						POST: Usado para enviar un recurso, puede causar un cambio de estado o efectos en el servidor.<br>
+						PUT: Reemplaza todas las representaciones actuales del recurso de destino con la carga útil de
+						petición.<br>
+						PATCH: Modifica parcialmente un recurso.<br>
+						DELETE: Borra el recurso indicado.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods" class=
+						"card-link">https://developer.mozilla.org/es/docs/Web/HTTP/Methods</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu
+						usuario y contraseña en algún sitio? ¿Por qué?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Se debe usar el método POST, para enviar información.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods" class=
+						"card-link">https://developer.mozilla.org/es/docs/Web/HTTP/Methods</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través
+						de un URL?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Se usa el método GET, para así obtener los recursos que están la dirección de la URL.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="http://blog.micayael.com/2011/02/09/metodos-get-vs-post-del-http/" class=
+						"card-link">http://blog.micayael.com/2011/02/09/metodos-get-vs-post-del-http/</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún
+						error?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>El código 200 es "OK", por lo que la petición hecha fue exitosa.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status" class=
+						"card-link">https://developer.mozilla.org/es/docs/Web/HTTP/Status</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+						al sitio y se encontró con un error 404? ¿Por qué?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Si todo se realiza de manera correcta, es responsabilidad, por que dicho código reporta que no se pudo
+						acceder a algún recurso, por lo que el sitio tiene entonces un enlace o referencia roto o dañado que se
+						tiene que reparar.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.inboundcycle.com/diccionario-marketing-online/error-404" class=
+						"card-link">https://www.inboundcycle.com/diccionario-marketing-online/error-404</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+						al sitio y se encontró con un error 500? ¿Por qué?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Si, por que el error 500 es frecuente ocasionado por: errores de permisos,un tiempo de espera o un error
+						en el .htaccess.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.cdmon.com/es/blog/error-500-internal-server-error" class=
+						"card-link">https://www.cdmon.com/es/blog/error-500-internal-server-error</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos
+						elementos de HTML 4 que en HTML5 estén desaprobados.</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Significa que es posible que en futuras versiones ya no sea implementado, y por lo tanto quede obsoleto
+						y sea mas difícil de actualizar.<br>
+						Algunos elementos desaprobados son: applet, dir, isindex y menu.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.htmlhelp.com/reference/html40/deprecated.html" class=
+						"card-link">https://www.htmlhelp.com/reference/html40/deprecated.html</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h6>
+					</div>
+
+					<div class="card-body">
+						<p>HTML5 cuenta con video playback y drag-and-drop que dependian de terceros para poder hacerse, ademas de
+						que posee un mejor manejo de errores, posee compatibilidad tambien con XHTML 1.0 e incluye elementos de SVG
+						y MathML.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href=
+						"https://blogs.ua.es/pi/2011/01/17/%C3%82%C2%BFcuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/"
+						class=
+						"card-link">https://blogs.ua.es/pi/2011/01/17/¿cuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Qué componentes de estructura y estilo tiene una tabla?</h6>
+					</div>
+
+					<div class="card-body">
+						<table>
+							<tr>
+								<th scope="row">Componente</th>
+
+								<th>Descripcion</th>
+							</tr>
+
+							<tr>
+								<th>table</th>
+
+								<td>Encabezado</td>
+							</tr>
+
+							<tr>
+								<th>tr</th>
+
+								<td>Define una fila.</td>
+							</tr>
+
+							<tr>
+								<th>th</th>
+
+								<td>Define una columna como encabezado</td>
+							</tr>
+
+							<tr>
+								<th>td</th>
+
+								<td>Define una columna</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://www.htmlquick.com/es/tutorials/tables.html" class=
+						"card-link">https://www.htmlquick.com/es/tutorials/tables.html</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Cuáles son los principales controles de una forma HTML5?</h6>
+					</div>
+
+					<div class="card-body">
+						Los nuevos tipos son: entrada de números, un control deslizante de rango, controles de fecha y hora,
+						selector de color, barra de búsqueda, listas, teléfono, correo y entrada de url.
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="https://mosaic.uoc.edu/ac/le/es/m8/ud3/index.html" class=
+						"card-link">https://mosaic.uoc.edu/ac/le/es/m8/ud3/index.html</a>
+					</div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para
+						descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h6>
+					</div>
+
+					<div class="card-body">
+						<p>Usando Opera 66.0 en Windows 10, tiene un puntaje de 481/555.</p>
+					</div>
+
+					<div class="card-footer text-muted">
+						<a href="http://html5test.com" class="card-link">http://html5test.com</a>
+					</div>
+				</div>
+
+				<h5>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h5>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Cuál es el ciclo de vida de los sistemas de información?</h6>
+					</div>
+
+					<div class="card-body">
+					<ol type="1">
+  <li>Fase de planificación</li>
+  <li>Fase de análisis</li>
+  <li>Fase de diseño</li>
+  <li>Fase de desarrollo</li>
+  <li>Fase de integración y periodo de pruebas</li>
+  <li>Fase de implementación</li>
+  <li>Fase de mantenimiento</li>
+</ol>
+					</div>
+
+					<div class="card-footer text-muted"><a href="https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/ciclo-de-vida-de-un-sistema-de-informacion-fases-y-componentes" class="card-link">https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/ciclo-de-vida-de-un-sistema-de-informacion-fases-y-componentes</a></div>
+				</div>
+
+				<div class="card text-white bg-dark mb-3">
+					<div class="card-header">
+						<h6>¿Cuál es el ciclo de desarrollo de sistemas de información?</h6>
+					</div>
+
+					<div class="card-body">
+					<ol type="1">
+  <li>Identificación de problemas, oportunidades y objetivos</li>
+  <li>Determinación de los requerimientos de información</li>
+  <li>Análisis de las necesidades del sistema</li>
+  <li>Diseño del sistema recomendado</li>
+  <li>Desarrollo y documentación de software</li>
+  <li>Prueba y mantenimiento del sistema</li>
+  <li>Implementación y evaluación de sistema</li>
+  <li>Impacto del mantenimiento</li>
+</ol>
+					</div>
+
+					<div class="card-footer text-muted"><a href="https://es.slideshare.net/AvelinoFelipePolicarpio/el-ciclo-de-vida-del-desarrollo-de-sistemas" class="card-link">https://es.slideshare.net/AvelinoFelipePolicarpio/el-ciclo-de-vida-del-desarrollo-de-sistemas</a></div>
 				</div>
 			</article>
 		</div>
 	</section>
 
 	<footer class="footer mt-auto py-3">
-		<div class=" card-footer fixed-bottom bg-dark">
+		<div class=" fixed-bottom bg-dark">
 			<p class="text-light">Made using Notepad++<br>
 			Framework: Bootstrap</p>
 		</div>
-	</footer><!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity=
+	</footer><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity=
 	"sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity=
 "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
