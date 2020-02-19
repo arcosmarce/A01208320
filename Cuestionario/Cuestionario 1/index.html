@@ -12,11 +12,11 @@
 	<title>Lab 1</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<style>
-																	.nav-tabs {border-bottom: 1px solid #fc0303;}
-																				ul.nav > li > a:hover {color: #ffffff;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;background-color: #495057}
-																				.nav-tabs > li > a {color: #919191;}
-																				a.active.nav-link{color:#ffffff!important;background-color: #868e96!important;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;border-bottom-style:none;}
-																				body {margin-bottom: 30px;}
+		.nav-tabs {border-bottom: 1px solid #fc0303;}
+		ul.nav > li > a:hover {color: #ffffff;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;background-color: #495057}
+		.nav-tabs > li > a {color: #919191;}
+		a.active.nav-link{color:#ffffff!important;background-color: #868e96!important;border-style: none;border-right: 5px solid #fc0303 !important;border-left: 5px solid #fc0303 !important;border-bottom-style:none;}
+		body {margin-bottom: 30px;}
 	</style>
 </head>
 
@@ -29,71 +29,95 @@
 	</header>
 
 	<section>
-			<article >
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>¿Qué es entonces una base de datos - DB?</h6>
-					</div>
-
-					<div class="card-body">
-						<p>Es un conjunto de archivos que contienen informacion </p>
-					</div>
+		<article>
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>¿Qué es entonces una base de datos - DB?</h6>
 				</div>
-				
-				
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>¿En qué casos es conveniente usar bases de datos?</h6>
-					</div>
 
-					<div class="card-body">
-						<p></p>
-					</div>
+				<div class="card-body">
+					<p>Es un conjunto de archivos que contienen información de manera organizada, consistente y que se relaciona
+					entre si.</p>
 				</div>
-				
-				
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>¿Qué es un sistema de gestión de base de datos - DBMS?</h6>
-					</div>
+			</div>
 
-					<div class="card-body">
-						<p></p>
-					</div>
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>¿En qué casos es conveniente usar bases de datos?</h6>
 				</div>
-				
-				
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>Enlista y explica las funciones/responsabilidades que tienen los DBMS.</h6>
-					</div>
 
-					<div class="card-body">
-						<p></p>
-					</div>
+				<div class="card-body">
+					<p>Es principalmente mas útil cuando se tiene una gran cantidad de información/registros, que seria
+					prácticamente imposible revisarlos manualmente, también cuando se requiere proteger ciertos datos y para que
+					sea mas fácil añadir información.</p>
 				</div>
-				
-				
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base de datos.</h6>
-					</div>
+			</div>
 
-					<div class="card-body">
-						<p></p>
-					</div>
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>¿Qué es un sistema de gestión de base de datos - DBMS?</h6>
 				</div>
-				<div class="dropdown-divider"></div>
-								<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h6>Fuentes Consultadas</h6>
-					</div>
 
-					<div class="card-body">
-						<p>Korth Henry, Silverschatz
-Fundamentos de bases de datos, Capitulo 1.</p>
-					</div>
-			</article>
+				<div class="card-body">
+					<p>Es un software de interfaz que se encuentra entre el usuario, la base de datos y los programas que lo
+					utilizan, para que sea mas facil y conveniente de utilizar</p>
+				</div>
+			</div>
+
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>Enlista y explica las funciones/responsabilidades que tienen los DBMS.</h6>
+				</div>
+
+				<div class="card-body">
+					<ul>
+						<li>Redundancia de datos: El sistema al tener los ficheros integrados, evita que se guarden varias copias
+						de un mismo archivo, reduciendo el espacio de almacenamiento total y el ruido de tener varias veces la
+						misma información.</li>
+
+						<li>Consistencia de datos: Al controlar la redundancia ayuda a que la consistencia se mantenga, ya que toda
+						la información se actualiza y no se tienen datos obsoletos.</li>
+
+						<li>Compartir datos: Sin una base de datos, los ficheros solo se pueden almacenar y modificar una a la vez,
+						con los DBMS permiten que varias personas accedan a estos datos.</li>
+
+						<li>Seguridad: Al tener limitaciones especificando que usuarios pueden acceder a que información ayuda a
+						proteger datos de externos o de ser modificados o accedidos por un usuario que no tendría que tener
+						acceso.</li>
+
+						<li>Accesibilidad de los datos: No es necesario tener conocimientos de programación o saber exactamente
+						como se almacenan los datos para poder leer la información.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base
+					de datos.</h6>
+				</div>
+
+				<div class="card-body">
+					<p>No necesariamente proyecto, pero cuando tuve que ayudar en la parte administrativa de una escuela, hubiera
+					facilitado mucho el trabajo tener una base de datos antes que tener que obtener la información de diferentes
+					fuentes, internet, archivos en varias carpetas y físicos.</p>
+				</div>
+			</div>
+
+			<div class="dropdown-divider"></div>
+
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h6>Fuentes Consultadas</h6>
+				</div>
+
+				<div class="card-body">
+					<p>Korth Henry, Silverschatz Fundamentos de bases de datos, Capitulo 1.<br>
+					<a href=
+					"http://www.maestrosdelweb.com/que-son-las-bases-de-datos/">http://www.maestrosdelweb.com/que-son-las-bases-de-datos/</a></p>
+				</div>
+			</div>
+		</article>
 	</section>
 
 	<footer class="footer mt-auto py-3">
