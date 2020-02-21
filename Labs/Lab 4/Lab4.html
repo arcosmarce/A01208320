@@ -5,43 +5,270 @@
     <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity=
-    "sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="..\..\Resources\css\MyStyle.css">
+    <link rel="icon" href="..\..\Resources\img\favicon.ico" type="image/x-icon">
 
     <title>Lab 4</title>
-    <link rel="icon" href="..\..\Resources\img\favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-secondary" onload="init(2)">
+<body onload="init(2)" class="bg-secondary">
     <header>
         <div id="header"></div>
     </header>
 
-	<nav>
-		<ul class="nav nav-tabs bg-dark" id="myTab" role="tablist">
-			<li class="nav-item">
-				<a class="nav-link active" id="JS-tab" data-toggle="tab" href="#JS" role="tab" aria-selected="true">Perfil</a>
-			</li>
+    <aside>
+        <div id="aside" class="sidebar bg-dark"></div>
+    </aside>
 
-			<li class="nav-item">
-				<a class="nav-link" id="preg-tab" data-toggle="tab" href="#preg" role="tab" aria-selected="false">Preguntas</a>
-			</li>
-		</ul>
-	</nav>
+    <nav>
+        <ul class="nav nav-tabs bg-dark" id="Tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-selected="true">JavaScript</a>
+            </li>
 
+            <li class="nav-item">
+                <a class="nav-link" id="preg-tab" data-toggle="tab" href="#preg" role="tab" aria-selected="false">Preguntas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="tab-content" id="TabContent">
+            <div class="tab-pane fade show active" id="js" role="tabpanel" aria-labelledby="js-tab">
+                <article>
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 1</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Entrada: un número pedido con un prompt.<br>
+                            Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza
+                            document.write para producir la salida</p><button type="button" class="btn btn-dark btn-lg btn-block"
+                            onclick="ejer1()">Iniciar</button>
+
+                            <div id="res1"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 2</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera
+                            aleatoria.<br>
+                            Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el
+                            usuario en escribir la respuesta.</p><button type="button" class="btn btn-dark btn-lg btn-block"
+                            onclick="ejer2()">Iniciar</button>
+
+                            <div id="res2"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 3</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Función: contador.<br>
+                            Parámetros: Un arreglo de números.<br>
+                            Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0's, y la cantidad de valores
+                            mayores a 0 en el arreglo.</p><button type="button" class="btn btn-dark btn-lg btn-block" onclick=
+                            "ejer3()">Iniciar</button>
+
+                            <div id="res3"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 4</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Función: promedios.<br>
+                            Parámetros: Un arreglo de arreglos de números.<br>
+                            Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.</p><button type=
+                            "button" class="btn btn-dark btn-lg btn-block" onclick="ejer4()">Iniciar</button>
+
+                            <div id="res4"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 5</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Función: inverso.<br>
+                            Parámetros: Un número.<br>
+                            Regresa: El número con sus dígitos en orden inverso.</p><button type="button" class=
+                            "btn btn-dark btn-lg btn-block" onclick="ejer5()">Iniciar</button>
+
+                            <div id="res5"></div>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Ejercicio 6</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses,
+                            alguna problemática que hayas identificado en algún ámbito, un problema de programación que hayas
+                            resuelto en otro lenguaje, un problema de la ACM, entre otros). El problema debe estar descrito en un
+                            documento HTML, y la solución implementada en JavaScript, utilizando al menos la creación de un
+                            objeto, el objeto además de su constructor deben tener al menos 2 métodos. Muestra los resultados en
+                            el documento HTML.</p>
+
+                            <div class="dropdown-divider"></div>
+
+                            <p>A. Theatre Square<br>
+                            Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters.
+                            On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite
+                            flagstones. Each flagstone is of the size a × a.<br>
+                            What is the least number of flagstones needed to pave the Square? It's allowed to cover the surface
+                            larger than the Theatre Square, but the Square has to be covered. It's not allowed to break the
+                            flagstones. The sides of flagstones should be parallel to the sides of the Square.<br>
+                            <br>
+                            Input<br>
+                            The input contains three positive integer numbers in the first line: n,  m and a
+                            (1 ≤  n, m, a ≤ 109).<br>
+                            <br>
+                            Output<br>
+                            Write the needed number of flagstones.</p><button type="button" class="btn btn-dark btn-lg btn-block"
+                            onclick="ejer6()">Iniciar</button>
+
+                            <div id="res6"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tab-pane fade" id="preg" role="tabpanel" aria-labelledby="preg-tab">
+                <article>
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>En cuanto a sus semejanzas, ambos tienen una sintaxis muy parecida, por lo que no es necesario tener que aprender otro lenguaje para usar el otro una vez dominas uno.<br>La principal diferencia es que Java corre en un JVM y puede existir solo mientras que JavaScript corre en un navegador y depende de mas elementos. Ademas que la sintaxis de JavaScript no es tan estricta. Java utiliza mas memoria que JavaScript. Java utiliza threads mientras que JavaScript en eventos.</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Qué métodos tiene el objeto Date? (Menciona al menos 5)</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <ul>
+                                <li>parse</li>
+
+                                <li>UTC</li>
+
+                                <li>toDateString</li>
+
+                                <li>getMonth</li>
+
+                                <li>setFullYear</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Qué métodos tienen los arreglos? (Menciona al menos 5)</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <ul>
+                                <li>unshift</li>
+
+                                <li>shift</li>
+
+                                <li>splice</li>
+
+                                <li>join</li>
+
+                                <li>concat</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Cómo se declara una variable con alcance local dentro de una función?</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Se utiliza let, ya que solo tiene alcance dentro de un bloque y no se pueden acceder
+                            globalmente.</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Que se pueden acceder a ellas de forma accidental obteniendo entonces resultados no deseados.</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para
+                            qué podrías utilizar esto en una aplicación web?</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Se puede usar match()<br>
+                            Sería útil cuando en formas se tenga que buscar un campo en especifico.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-divider"></div>
+
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">
+                            <h6>Fuentes Consultadas</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <a href=
+                            "https://codeburst.io/difference-between-let-and-var-in-javascript-537410b2d707">https://codeburst.io/difference-between-let-and-var-in-javascript-537410b2d707</a>
+                            <a href=
+                            "https://www.geeksforgeeks.org/javascript-match/">https://www.geeksforgeeks.org/javascript-match/</a>
+                            <a href=
+                            "http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_date_methods.asp.html">http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_date_methods.asp.html</a>
+                            <a href=
+                            "https://www.geeksforgeeks.org/javascript-basic-array-methods/">https://www.geeksforgeeks.org/javascript-basic-array-methods/</a>
+							<a href="https://www.geeksforgeeks.org/difference-between-java-and-javascript/">https://www.geeksforgeeks.org/difference-between-java-and-javascript/</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div id="footer"></div>
-    </footer><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity=
-    "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity=
-"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity=
-"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </footer><!--Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+</script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+</script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
 </script> <script type="text/javascript" src="../../Resources/js/format.js">
-</script> <script type="text/javascript" src="script.js">
+</script> <script type="text/javascript" src="js/script.js">
 </script>
 </body>
 </html>
