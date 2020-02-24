@@ -5,6 +5,6 @@ a.active.nav-link{color:#ffffff!important;background-color: #868e96!important;bo
 body {margin-bottom: 115px;}
 .sidebar {height: 100%;width: 0;position: fixed;z-index: 1031;top: 0;left: 0;overflow-x: hidden;transition: .5s}
 #header {transition: margin-left .5s}
-img{height: 100%; width: 100%; object-fit: contai}
+img{height: 100%; width: 100%; object-fit: contain;}
 img.icon {height: 20px;width: 20px;display: block;}
 .fixed-bottom{border-top:5px solid #fc0303 !important;}
