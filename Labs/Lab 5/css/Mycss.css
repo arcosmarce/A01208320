@@ -1,0 +1,13 @@
+.valid{
+	color:green;
+	font-size: medium;
+}
+.valid:before{
+	content:"✔";}
+
+.invalid{
+	color: red;
+	font-size: large;
+}
+.invalid:before{
+	content:"❌";}
